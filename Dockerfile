@@ -2,6 +2,6 @@ FROM node:12
 WORKDIR /appnodejs
 ADD . /appnodejs
 RUN npm config set strict-ssl false
-RUN npm install --legacy-peer-deps
+RUN npm install --force --legacy-peer-deps
 EXPOSE 3000
 CMD npm start
