@@ -1,5 +1,4 @@
 FROM node:12
-RUN echo "nameserver 148.231.192.6" > /etc/resolv.conf
 WORKDIR /appnodejs
 ADD . /appnodejs
 RUN npm config set strict-ssl false 
